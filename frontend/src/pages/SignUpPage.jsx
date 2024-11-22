@@ -1,15 +1,20 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useAuthStore } from "../store/authUser.js";
 
 const SignUpPage = () => {
-  const [email, setEmail] = useState("");
+  const { searchParams } = new URL(document.location);
+  const emailValue = searchParams.get("email");
+
+  const [email, setEmail] = useState(emailValue || "");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+  const { signup } = useAuthStore();
+
   const handleSignUp = (e) => {
     e.preventDefault();
-    // signup({ email, username, password });
-    console.log(email, username, password);
+    signup({ email, username, password });
   };
 
   return (
@@ -62,7 +67,7 @@ const SignUpPage = () => {
                 htmlFor="password"
                 className="text-sm font-medium text-gray-300 block"
               >
-                Email
+                Password
               </label>
               <input
                 type="password"
