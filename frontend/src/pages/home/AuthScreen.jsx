@@ -17,7 +17,7 @@ const AuthScreen = () => {
       <header className="max-w-6xl mx-auto flex items-center justify-between p-4 pb-10">
         <img
           src="/netflix-logo.png"
-          alt="Netflix Logo"
+          alt="Notflicks Logo"
           className="w-32 md:w-52"
         />
         <Link to={"/login"} className="text-white bg-red-600 py-1 px-2 rounded">
@@ -105,12 +105,7 @@ const AuthScreen = () => {
         w-3/4 lg:w-1/2 h-24 border border-slate-500 rounded-md px-2
         "
               >
-                <img
-                  src="/stranger-things-sm.png"
-                  alt="image"
-                  className="h-full"
-                />
-                <div className=" flex justify-between items-center w-full">
+                <div className="ms-4 flex justify-between items-center w-full">
                   <div className="flex flex-col gap-0">
                     <span className="text-md lg:text-lg font-bold">
                       Stranger Things

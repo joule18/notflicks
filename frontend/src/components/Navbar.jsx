@@ -18,7 +18,7 @@ const Navbar = () => {
         <Link to="/">
           <img
             src="/netflix-logo.png"
-            alt="Netflix Logo"
+            alt="Notflicks Logo"
             className="w-32 sm:w-40"
           />
         </Link>
