@@ -5,14 +5,15 @@ const Footer = () => {
         <p className="text-balance text-center text-sm leading-loose text-muted-foreground md:text-left">
           The source code is available on {/* UPDATE NAME AND URL */}
           <a
-            href="https://github.com/burakorkmez"
+            href="https://github.com/joule18/notflicks.git"
             target="_blank"
             rel="noreferrer"
             className="font-medium underline underline-offset-4"
           >
             GitHub
           </a>
-          .
+          . This project is inspired by Netflix and built for learning purposes
+          only.
         </p>
       </div>
     </footer>
